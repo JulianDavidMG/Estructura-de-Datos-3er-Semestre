@@ -1,0 +1,8 @@
+import re
+
+regularEx = r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
+
+palabra = """**El Café Matutino** Eran las 7:30 de la mañana cuando Carlos llegó a su cafetería favorita, "El Rincón Digital". Mientras esperaba su latte, revisó su correo en el teléfono. Su jefe le había enviado un mensaje urgente: "Carlos, necesito que revises el informe técnico del proyecto 192.168.23.45 antes de las 9:00. Los datos están en el servidor 10.5.200.88. Por favor, verifica también la conexión con la impresora 172.16.0.255." El barista, un joven con lentes y una playera que decía "There's no place like 127.0.0.1", le entregó su café con la cuenta. La factura decía: "Orden #1042 - Total: $8.8.8.8 - ¡Gravis por visitarnos! Siguiente cliente: #255.255.255.0". Mientras tomaba su primer sorbo, Carlos notó que alguien había dejado una libreta en la mesa de junto. Al abrirla, vio anotaciones curiosas: "Recordatorio: llamar al técnico para configurar el router 192.168.1.1. Contraseña: admin123. Dirección del cliente: Calle 10.0.0.138 #25-75. Al salir del café, vio un poster promocional: "¡Concurso de programación! Premio: $1000. Envía tu código a dev@contest.8.8.4.4.com. Fecha límite: 2024.12.24. Carlos sonrió. En el mundo digital, hasta la vida cotidiana estaba llena de direcciones IP esperando ser descubiertas por ojos entrenados."""
+
+resultado = re.findall(regularEx, palabra)
+print("Direcciones IP encontradas:", resultado)
