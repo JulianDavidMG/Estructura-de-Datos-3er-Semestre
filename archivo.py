@@ -15,6 +15,7 @@ for i in palabra:
 u = 'H'
 r = 'E'
 e = 'L'
+e = 'L'
 s = 'O'
 
 print(u+r+e+e+s)
